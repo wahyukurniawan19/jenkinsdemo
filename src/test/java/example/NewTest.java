@@ -18,7 +18,7 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dhealth07\\.jenkins\\plugins\\chromedriver\\WEB-INF\\lib\\chromedriver");
+			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			webDriver = new ChromeDriver();
 			
 		}		
