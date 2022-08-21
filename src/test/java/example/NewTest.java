@@ -15,13 +15,15 @@ public class NewTest {
 			webDriver.get("http://demo.guru99.com/test/guru99home/");  
 			String title = webDriver.getTitle();				 
 			Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
+			
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-			System.setProperty("webdriver.chrome.driver", "/tools/chromedriver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\chrome\\chromedriver.exe");
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("headless");
 			webDriver = new ChromeDriver(opt);
+			
 		}		
 		@AfterTest
 		public void afterTest() {
