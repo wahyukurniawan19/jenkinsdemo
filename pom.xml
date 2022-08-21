@@ -48,12 +48,7 @@
             <artifactId>testng</artifactId>								
             <version>6.8.8</version>								
             <scope>test</scope>							  			
-       </dependency>	
-       <dependency>
-    <groupId>org.jenkins-ci.plugins</groupId>
-    <artifactId>chromedriver</artifactId>
-    <version>1.2</version>
-</dependency>			
+       </dependency>				
 </dependencies>
 
 </project>
