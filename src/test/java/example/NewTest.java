@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
@@ -20,8 +19,6 @@ public class NewTest {
 		@BeforeTest
 		public void beforeTest() {	
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-//			ChromeOptions opt = new ChromeOptions();
-//			opt.addArguments("headless");
 			webDriver = new ChromeDriver();
 			
 		}		
