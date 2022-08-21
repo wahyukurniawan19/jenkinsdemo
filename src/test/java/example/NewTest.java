@@ -19,10 +19,10 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-			//System.setProperty("webdriver.chrome.driver", "D:\\chrome\\chromedriver.exe");
-			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("headless");
-			webDriver = new ChromeDriver(opt);
+			System.setProperty("webdriver.chrome.driver", "D:\\chrome\\chromedriver.exe");
+//			ChromeOptions opt = new ChromeOptions();
+//			opt.addArguments("headless");
+			webDriver = new ChromeDriver();
 			
 		}		
 		@AfterTest
