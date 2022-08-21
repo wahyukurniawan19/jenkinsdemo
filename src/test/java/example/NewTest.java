@@ -18,7 +18,7 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-			//System.setProperty("webdriver.chrome.driver", "D:\\chrome\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "C:\Users\Dhealth07\.jenkins\tools\chromedriver\chromedriver");
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("headless");
 			webDriver = new ChromeDriver(opt);
