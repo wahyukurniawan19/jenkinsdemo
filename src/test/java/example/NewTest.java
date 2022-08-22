@@ -24,6 +24,9 @@ public class NewTest {
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("headless");
 			webDriver = new ChromeDriver(opt);
+			opt.addArguments("--no-sandbox");
+	        opt.addArguments("--disable-dev-shm-usage");
+	        
 			
 		}		
 		@AfterTest
