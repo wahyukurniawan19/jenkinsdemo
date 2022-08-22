@@ -18,7 +18,7 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "google-chrome");
 			webDriver = new ChromeDriver();
 			
 		}		
