@@ -23,11 +23,11 @@ public class NewTest {
 			//webDriver = new ChromeDriver();
 			ChromeOptions opt = new ChromeOptions();
 			opt.addArguments("headless");
-			webDriver = new ChromeDriver(opt);
 			opt.addArguments("--no-sandbox");
 	        opt.addArguments("--disable-dev-shm-usage");
-	        
-			
+	        opt.addArguments("disable-infobars");
+			webDriver = new ChromeDriver(opt);
+
 		}		
 		@AfterTest
 		public void afterTest() {
