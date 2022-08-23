@@ -19,14 +19,15 @@ public class NewTest {
 		}	
 		@BeforeTest
 		public void beforeTest() {	
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			//webDriver = new ChromeDriver();
-			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("headless");
-			opt.addArguments("--no-sandbox");
-	        opt.addArguments("--disable-dev-shm-usage");
-	        opt.addArguments("disable-infobars");
-			webDriver = new ChromeDriver(opt);
+//			ChromeOptions opt = new ChromeOptions();
+//			opt.addArguments("headless");
+//			opt.addArguments("--no-sandbox");
+//	        opt.addArguments("--disable-dev-shm-usage");
+//	        opt.addArguments("disable-infobars");
+//			webDriver = new ChromeDriver(opt);
+			webDriver = new ChromeDriver();
 
 		}		
 		@AfterTest
